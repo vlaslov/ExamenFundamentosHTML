@@ -30,8 +30,55 @@
         <li><a href="educacion.html">Educación</a></li>
         <li><a href="experiencia.html">Experiencia</a></li>
     </ul>
-    <!-- Incorpora un título en h2 Información Personal y agrega una Foto de tu preferencia acorde con tu hoja de vida. -->
+    <!-- Incorpora un título en h2 Educación -->
     <h2>Educación</h2>
+    <table border="1px">
+        <thead>
+            <tr>
+                <td><strong>Año</strong></td><td><strong>Institución</strong></td><td><strong>Lugar</strong></td><td><strong>¿Culminó?</strong></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1998</td><td>Colegio Sasakawa</td><td>Cusco-Perú</td><td>Si</td>
+            </tr>
+            <tr>
+                <td>2005</td><td>SENATI</td><td>Cusco-Perú</td><td>Si</td>
+            </tr>
+            <tr>
+                <td>2010</td><td>UNSAAC</td><td>Cusco-Perú</td><td>Si</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <!-- Dibuja un Formulario titulado "Agregar Estudios" -->
+    <h3>Agregar estudios:</h3>
+    <form class="" action="#" method="#">
+        <!-- Una lista desplegable para el Año -->
+        <strong>Año:</strong>
+        <select class="" name="anio">
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+        </select><br>
+        <!-- Una caja de entrada de texto para Institución, agrega la validación de campo requerido -->
+        <strong>Institución: </strong><input type="text" name="institucion" value=""><br>
+        <!-- Una caja de entrada de texto largo para Lugar -->
+        <strong>Lugar: </strong><input type="text" name="lugar" value=""><br>
+        <!-- Un radio button para las alternativas de ¿Culminó? -->
+        <strong>¿Cummino?</strong>
+            <input type="radio" name="cumino" value="Si">Si
+            <input type="radio" name="cumino" value="No">No<br>
+        <input type="submit" name="enviar" value="Enviar">
+    </form>
 
     <!-- Pie de Página en esta sección debes colocar información de contacto como: correo eléctrónico, teléfono, redes
     sociales o dirección. -->
