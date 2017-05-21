@@ -53,10 +53,10 @@
 
     <!-- Dibuja un Formulario titulado "Agregar Estudios" -->
     <h3>Agregar estudios:</h3>
-    <form class="" action="#" method="#">
+    <form action="#" method="#">
         <!-- Una lista desplegable para el Año -->
-        <strong>Año:</strong>
-        <select class="" name="anio">
+        <label for="anio">Año: </label>
+        <select name="anio" >
             <option value="2006">2006</option>
             <option value="2007">2007</option>
             <option value="2008">2008</option>
@@ -70,13 +70,14 @@
             <option value="2016">2016</option>
         </select><br>
         <!-- Una caja de entrada de texto para Institución, agrega la validación de campo requerido -->
-        <strong>Institución: </strong><input type="text" name="institucion" value=""><br>
+        <label for="institucion">Institucion: </label><input type="text" name="institucion" placeholder="Ej. Universidad Real Madrid" required><br>
         <!-- Una caja de entrada de texto largo para Lugar -->
-        <strong>Lugar: </strong><input type="text" name="lugar" value=""><br>
+        <label for="lugar">Lugar: º</label> <textarea name="lugar" rows="3" cols="80" placeholder="Ej. Andahuaylas/Apurimac"></textarea><br>
         <!-- Un radio button para las alternativas de ¿Culminó? -->
-        <strong>¿Cummino?</strong>
-            <input type="radio" name="cumino" value="Si">Si
-            <input type="radio" name="cumino" value="No">No<br>
+        <label for="culmino">¿Culminó?</label>
+            <input type="radio" name="culmino" value="Si">Si
+            <input type="radio" name="culmino" value="No">No<br>
+        <!-- Botón enviar con un Submit -->
         <input type="submit" name="enviar" value="Enviar">
     </form>
 
